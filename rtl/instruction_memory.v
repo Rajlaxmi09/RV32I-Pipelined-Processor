@@ -29,7 +29,6 @@ initial begin
     {inst_mem[83],  inst_mem[82], inst_mem[81], inst_mem[80]} = 32'h00890913; // 21
     {inst_mem[87],  inst_mem[86], inst_mem[85], inst_mem[84]} = 32'hfa000ae3; // 22
 end
-
 always @(*) begin
     instruction[7:0]   = inst_mem[inst_address];
     instruction[15:8]  = inst_mem[inst_address+1];
